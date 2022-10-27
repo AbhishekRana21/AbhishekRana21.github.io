@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Responsibilities</h3>
-          <div className="experience__content">
+          <div className="experience__contentR">
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>

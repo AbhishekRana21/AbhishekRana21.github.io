@@ -25,16 +25,12 @@ nav a{
 }
 
 nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-
-nav a.active{
-    /*(initial) background: var(--color-bg); */
-    /*(our's) background: rgba(65, 195, 255, 0.3); */
-    /*new*/
     background: var(--color-primary);
-
-    /*(initial) color: var(--color-white); */
-    /*new*/
     color: var(--color-bg);
+    /* background: rgba(0, 0, 0, 0.3); */
 }
+
+/* nav a.active{
+    background: var(--color-primary);
+    color: var(--color-bg);
+} */

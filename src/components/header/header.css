@@ -48,9 +48,10 @@ header{
 
 .header__mobile-socials a{
     padding: 0.8rem;
-    border-radius: 0.7rem;
+    border-radius: 10rem;
     display: flex;
-    border: 1px solid transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 /* =================== ME ================= */

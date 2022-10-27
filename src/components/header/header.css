@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 14rem;
+    padding-top: 11rem;
     /* padding-top: 7rem; */
     overflow: hidden;
 }
@@ -38,6 +38,21 @@ header{
     background: var(--color-primary);
 }
 
+/* =================== HEADER MOBILE SOCIALS ================= */
+.header__mobile-socials{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.header__mobile-socials a{
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
 /* =================== ME ================= */
 .me{
     background: linear-gradient(var(--color-primary),transparent);
@@ -61,6 +76,13 @@ header{
     font-size: 0.9rem;
 }
 
+/* ================= MEDIA QUERIES (LARGE & MEDIUM DEVICES) ================== */
+@media screen and (min-width: 601px){
+    .header__mobile-socials{
+        display: none;
+    }
+}
+
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================== */
 @media screen and (max-width: 1024px){
     header{
@@ -76,7 +98,7 @@ header{
     }
 
     header{
-        padding-top: 16rem;
+        padding-top: 11rem !important;
         /* padding-top: 5rem; */
         height: 90vh;
         /* height: 100vh;   */
@@ -87,9 +109,9 @@ header{
     }
 }
 
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================== */
+/* ================= MEDIA QUERIES (SMALLER DEVICES) ================== */
 @media screen and (max-width: 389px){
     header{
-        padding-top: 10rem !important;
+        padding-top: 6.1rem !important;
     }
 }

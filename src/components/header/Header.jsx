@@ -2,6 +2,7 @@ import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
+import HeaderMobileSocials from './HeaderMobileSocials'
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         <h2 className="text-light">A Computer Science Enthusiast</h2>
         <CTA/>
         <HeaderSocials/>
+        <HeaderMobileSocials/>
 
         <a href="#contact" className='scroll__down'><h3>Scroll Down</h3></a>
       </div>

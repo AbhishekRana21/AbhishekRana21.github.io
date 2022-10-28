@@ -22,15 +22,19 @@ nav a{
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
+    
 }
 
-nav a:hover{
+nav a:active {
     background: var(--color-primary);
     color: var(--color-bg);
-    /* background: rgba(0, 0, 0, 0.3); */
 }
 
-/* nav a.active{
-    background: var(--color-primary);
-    color: var(--color-bg);
-} */
+/* ================= MEDIA QUERIES (LARGE DEVICES) ================== */
+@media screen and (min-width: 1025px){
+    nav a:hover{
+        background: var(--color-primary);
+        color: var(--color-bg);
+        /* background: rgba(0, 0, 0, 0.3); */
+    }
+}

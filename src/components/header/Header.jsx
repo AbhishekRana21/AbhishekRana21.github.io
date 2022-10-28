@@ -12,11 +12,12 @@ const Header = () => {
         <h2>Hello I'm</h2>
         <h1>Abhishek Rana</h1>
         <h2 className="text-light">A Computer Science Enthusiast</h2>
+        <HeaderMobileSocials/>
         <CTA/>
         <HeaderSocials/>
-        <HeaderMobileSocials/>
+        
 
-        <a href="#contact" className='scroll__down'><h3>Scroll Down</h3></a>
+        <a href="#about" className='scroll__down'><h3>Scroll {'>'}{'>'}</h3></a>
       </div>
     </header>
   )

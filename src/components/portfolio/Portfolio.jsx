@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/img/portfolio1.png'
 import IMG2 from '../../assets/img/portfolio2.png'
+import IMG3 from '../../assets/img/portfolio3.png'
 
 const Portfolio = () => {
   return (
@@ -12,7 +13,7 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt='Drawlax: Fun Drawing Game' />
+            <img src={IMG3} alt='Drawlax: Fun Drawing Game' />
           </div>
           <h3>Drawlax: Fun Drawing Game</h3>
           <div className="portfolio__item-cta">
@@ -22,7 +23,17 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG2} alt='BLIBO' />
+            <img src={IMG2} alt='MagiPic' />
+          </div>
+          <h3>MagiPic</h3>
+          <div className="portfolio__item-cta">
+            <a href='https://github.com/AbhishekRana21/MagiPic' className='btn' target='_blank'>GitHub</a>
+            {/* <a href='https://github.com/AbhishekRana21' className='btn btn-primary' target='_blank'>GitHub</a> */}
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG1} alt='BLIBO' />
           </div>
           <h3>BLIBO</h3>
           <div className="portfolio__item-cta">

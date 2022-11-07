@@ -50,35 +50,56 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>C++</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Language</small>
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Python</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>SQL</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>C#</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Language</small>
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>C</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Language</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>C#</h4>
+                <small className='text-light'>Language</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>RDBMS</h4>
+                <small className='text-light'>Technology</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>SQL</h4>
+                <small className='text-light'>Technology</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>GitHub</h4>
+                <small className='text-light'>Tool</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Firebase</h4>
+                <small className='text-light'>Tool</small>
               </div>
             </article>
           </div>

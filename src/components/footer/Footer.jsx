@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
-import {FaDev} from 'react-icons/fa'
+import {SiLeetcode} from 'react-icons/si'
 
 const Footer = () => {
   return (
@@ -19,8 +19,8 @@ const Footer = () => {
 
       <div className="footer__socials">
         <a href="https://linkedin.com/in/AbhishekRana21" target="_blank"><BsLinkedin/></a>
+        <a href="https://leetcode.com/AbhishekRana21" target="_blank"><SiLeetcode/></a>
         <a href="https://github.com/AbhishekRana21" target="_blank"><BsGithub/></a>
-        <a href="https://dev.to/AbhishekRana21" target="_blank"><FaDev/></a>
       </div>
 
       <div className="footer__copyright">

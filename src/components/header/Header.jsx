@@ -11,7 +11,7 @@ const Header = () => {
 
         <h2>Hello I'm</h2>
         <h1>Abhishek Rana</h1>
-        <h2 className="text-light">A Computer Science Enthusiast</h2>
+        <h2 className="text-light">A Technology Enthusiast</h2>
         <HeaderMobileSocials/>
         <CTA/>
         <HeaderSocials/>

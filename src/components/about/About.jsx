@@ -24,7 +24,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>Tech & Team Lead</small>
+              <small>2+ Positions</small>
             </article>
 
             <article className='about__card'>
@@ -42,10 +42,12 @@ const About = () => {
           </div>
 
           <p>
-            A person who:<br/>
+            {/* A person who:<br/>
             • Believes in creating greatness.<br/>
             • Stays optimistic and focuses on the aim.<br/>
-            • Is open to collaborate and make a positive impact.
+            • Is open to collaborate and make a positive impact. */}
+            Welcome to my portfolio website. <br/>
+            I am pursuing my undergraduate degree in B.Tech Computer Science and Engineering (2021 - 2025) from Graphic Era Hill University, Dehradun.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>

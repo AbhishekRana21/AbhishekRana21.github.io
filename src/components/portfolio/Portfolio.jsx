@@ -4,6 +4,7 @@ import IMG1 from '../../assets/img/portfolio1.png'
 import IMG2 from '../../assets/img/portfolio2.png'
 import IMG3 from '../../assets/img/portfolio3.png'
 import IMG4 from '../../assets/img/portfolio4.png'
+import IMG5 from '../../assets/img/portfolio5.png'
 
 const Portfolio = () => {
   return (
@@ -12,6 +13,16 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <div className="container portfolio__container">
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG5} alt='Jarvis AI: GPT Assitant App' />
+          </div>
+          <h3>Jarvis AI: GPT Assitant App</h3>
+          <div className="portfolio__item-cta">
+          <a href='https://github.com/AbhishekRana21/Jarvis-AI' className='btn' target='_blank'>GitHub</a>
+          {/* <a href='https://github.com/AbhishekRana21' className='btn btn-primary' target='_blank'>GitHub</a> */}
+          </div>
+        </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={IMG4} alt='AR Cube: Augmented Reality App' />

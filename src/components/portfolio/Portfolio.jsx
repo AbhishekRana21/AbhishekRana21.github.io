@@ -35,16 +35,6 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG3} alt='Drawlax: Fun Drawing Game' />
-          </div>
-          <h3>Drawlax: Fun Drawing Game</h3>
-          <div className="portfolio__item-cta">
-          <a href='https://play.google.com/store/apps/details?id=com.ZelloSpark.Drawlax' className='btn btn-primary' target='_blank'>Play Store</a>
-            <a href='https://blogs.zellospark.com/2022/10/projects-drawlax.html' className='btn' target='_blank'>Blog</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
             <img src={IMG2} alt='MagiPic' />
           </div>
           <h3>MagiPic</h3>

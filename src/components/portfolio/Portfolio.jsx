@@ -14,9 +14,9 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG4} alt='Jarvis AI: GPT Assitant App' />
+            <img src={IMG4} alt='Jarvis AI: GPT Assistant App' />
           </div>
-          <h3>Jarvis AI: GPT Assitant App</h3>
+          <h3>Jarvis AI: GPT Assistant App</h3>
           <div className="portfolio__item-cta">
           <a href='https://github.com/AbhishekRana21/Jarvis-AI' className='btn' target='_blank'>GitHub</a>
           {/* <a href='https://github.com/AbhishekRana21' className='btn btn-primary' target='_blank'>GitHub</a> */}

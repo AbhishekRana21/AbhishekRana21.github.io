@@ -1,14 +1,42 @@
 header{
     height: 100vh;
     padding-top: 11rem;
-    /* padding-top: 7rem; */
     overflow: hidden;
+    position: relative;
 }
 
 .header__container{
     text-align: center;
     height: 100%;
     position: relative;
+    z-index: 2;
+}
+
+/* Tech grid background effect */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(10, 25, 47, 0.9) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 25, 47, 0.9) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Glowing accent for header */
+header h1 {
+    background: linear-gradient(90deg, var(--color-white) 0%, var(--color-primary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.5rem;
 }
 
 /* =================== CTA ================= */
@@ -21,21 +49,33 @@ header{
 
 /* =================== HEADER SOCIALS ================= */
 .header__socials{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.5rem;
     position: absolute;
     left: 0;
     bottom: 3rem;
 }
 
+.header__socials a {
+    transition: var(--transition);
+    color: var(--color-light);
+    opacity: 0.7;
+}
+
+.header__socials a:hover {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
 .header__socials::after{
     content: "";
     width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+    height: 4rem;
+    background: var(--color-primary-variant);
 }
 
 /* =================== HEADER MOBILE SOCIALS ================= */
@@ -43,28 +83,24 @@ header{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 .header__mobile-socials a{
     padding: 0.8rem;
-    border-radius: 10rem;
+    border-radius: 0.5rem;
     display: flex;
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary-variant);
     color: var(--color-primary);
+    transition: var(--transition);
+    background: var(--color-bg-variant);
+    backdrop-filter: blur(4px);
 }
 
-/* =================== ME ================= */
-.me{
-    background: linear-gradient(var(--color-primary),transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+.header__mobile-socials a:hover {
+    background: var(--color-primary-variant);
+    color: var(--color-bg);
+    transform: translateY(-3px);
 }
 
 /* =================== SCROLL DOWN ================= */
@@ -73,8 +109,20 @@ header{
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.scroll__down:hover {
+    opacity: 1;
+    color: var(--color-primary);
+}
+
+.scroll__down h3 {
+    font-weight: 500;
 }
 
 /* ================= MEDIA QUERIES (LARGE & MEDIUM DEVICES) ================== */
@@ -95,14 +143,11 @@ header{
 @media screen and (max-width: 600px){
     h1{
         font-size: 2.5rem !important;
-        /* font-size: 2.5rem; */
     }
 
     header{
-        padding-top: 11rem !important;
-        /* padding-top: 5rem; */
+        padding-top: 8rem !important;
         height: 90vh;
-        /* height: 100vh;   */
     }
 
     .header__socials, .scroll__down{

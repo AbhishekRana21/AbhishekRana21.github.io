@@ -30,7 +30,7 @@ const About = () => {
             <article className='about__card'>
               <FaGraduationCap className='about__icon'/>
               <h5>University</h5>
-              <small>CGPA: 9.18</small>
+              <small>CGPA: 9.10</small>
             </article>
 
             <article className='about__card'>

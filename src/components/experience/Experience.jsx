@@ -34,18 +34,6 @@ const Experience = () => {
                 </small>
               </div>
             </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Toycathon 2021 | Team Leader</h4>
-                <small className='text-light'>
-                <b>December 2020 - June 2021 | Dehradun</b><br />
-                ➔ Led a team of 4 individuals and reached the Finals of the all India hackathon.<br />
-                ➔ Worked on the digital and physical prototype of a board game that promoted logical and creative thinking.<br />
-                ➔ Used Python to design and build the player interface along with MySQL to store essential player data in the database.
-                </small>
-              </div>
-            </article>
           </div>
         </div>
         {/* END OF FRONTEND */}

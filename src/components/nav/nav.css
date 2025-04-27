@@ -1,68 +1,35 @@
-nav{
-    background: rgba(17, 34, 64, 0.6);
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
     width: max-content;
     display: block;
-    padding: 0.6rem;
+    padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.4rem;
-    border-radius: 0.75rem;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(100, 255, 218, 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: var(--transition);
+    gap: 0.8rem;
+    border-radius: 0.5rem; /* Changed from 3rem to 0.5rem to make it rectangular */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(80, 250, 123, 0.15);
 }
 
-nav:hover {
-    border-color: rgba(100, 255, 218, 0.3);
-}
-
-nav a{
+nav a {
     background: transparent;
-    padding: 0.8rem;
-    border-radius: 0.5rem;
+    padding: 0.9rem;
+    border-radius: 50%;
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
-    transition: var(--transition);
-    position: relative;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--color-primary);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: var(--transition);
-    opacity: 0;
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 nav a.active {
-    color: var(--color-primary);
-}
-
-nav a.active::after {
-    width: 60%;
-    opacity: 1;
-}
-
-/* ================= MEDIA QUERIES (LARGE DEVICES) ================== */
-@media screen and (min-width: 1025px){
-    nav a:hover{
-        color: var(--color-primary);
-        transform: translateY(-3px);
-    }
-    
-    nav a:hover::after {
-        width: 60%;
-        opacity: 1;
-    }
+    background: var(--color-primary);
+    color: var(--color-bg);
 }

@@ -21,19 +21,16 @@ header::before {
     right: 0;
     bottom: 0;
     background-image: 
-        linear-gradient(rgba(10, 25, 47, 0.9) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(10, 25, 47, 0.9) 1px, transparent 1px);
+        linear-gradient(rgba(80, 250, 123, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(80, 250, 123, 0.1) 1px, transparent 1px);
     background-size: 40px 40px;
-    opacity: 0.15;
+    opacity: 0.2;
     z-index: 0;
 }
 
 /* Glowing accent for header */
 header h1 {
-    background: linear-gradient(90deg, var(--color-white) 0%, var(--color-primary) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white); /* Using white color instead of gradient */
     display: inline-block;
     position: relative;
     margin-bottom: 0.5rem;

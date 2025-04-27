@@ -19,22 +19,23 @@
 }
 
 .portfolio__item{
-    background: var(--color-card);
+    background: rgba(15, 15, 15, 0.8);
     padding: 1.2rem;
     border-radius: 0.75rem;
-    border: 1px solid rgba(100, 255, 218, 0.1);
+    border: 1px solid rgba(80, 250, 123, 0.1);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(8px);
 }
 
 .portfolio__item:hover{
-    transform: translateY(-5px);
-    border-color: var(--color-primary-variant);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(80, 250, 123, 0.2);
 }
 
 .portfolio__item-image{
@@ -80,13 +81,14 @@
 }
 
 .tech-tag {
-    background: rgba(17, 34, 64, 0.8);
+    background: rgba(15, 15, 15, 0.7);
     color: var(--color-primary);
     padding: 0.2rem 0.6rem;
     border-radius: 0.25rem;
     font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 0.5px;
+    border: 1px solid rgba(80, 250, 123, 0.15);
 }
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================== */

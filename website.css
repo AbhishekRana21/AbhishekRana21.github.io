@@ -205,24 +205,11 @@ body {
 }
 
 /* Education & Experience */
-.section-content {
-    position: relative;
-}
-
-.section-content::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    background-color: var(--primary-dim);
-}
-
 .timeline-item {
     margin-bottom: var(--spacing-lg);
     position: relative;
     padding-left: var(--spacing-md);
+    border-left: 1px solid var(--primary-dim);
 }
 
 .timeline-item::before {
@@ -234,7 +221,6 @@ body {
     background-color: var(--primary-color);
     left: -5px;
     top: 8px;
-    z-index: 1;
 }
 
 .timeline-item h3 {

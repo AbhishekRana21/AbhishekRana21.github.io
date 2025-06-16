@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-website",
+  "homepage": "https://abhishekrana.com",
+  "version": "1.0.0",
+  "scripts": {
+    "predeploy": "echo Ready to deploy",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

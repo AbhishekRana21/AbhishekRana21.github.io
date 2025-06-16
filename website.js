@@ -32,8 +32,8 @@ const targetFPS = isMobile ? 25 : 35;
 const frameDelay = 1000 / targetFPS;
 
 function draw() {
-    // Semi-transparent fade effect (more transparent on mobile for better performance)
-    ctx.fillStyle = isMobile ? 'rgba(10, 10, 10, 0.08)' : 'rgba(10, 10, 10, 0.06)';
+    // Semi-transparent fade effect (adjusted for better visibility)
+    ctx.fillStyle = isMobile ? 'rgba(10, 10, 10, 0.04)' : 'rgba(10, 10, 10, 0.03)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = '#00ff00';

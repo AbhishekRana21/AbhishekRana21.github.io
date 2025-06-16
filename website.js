@@ -86,3 +86,37 @@ window.addEventListener('resize', function() {
         }
     }, 200);
 });
+
+// Entry animation for sections
+document.addEventListener('DOMContentLoaded', () => {
+    // Animate the header first
+    const header = document.querySelector('.header');
+    if (header) {
+        header.style.animation = 'fadeIn 0.8s ease-out forwards';
+    }
+    
+    // Staggered animation for sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section, index) => {
+        // Create a staggered delay
+        const delay = 0.3 + (index * 0.15);
+        
+        // Set the animation with delay
+        section.style.animation = `fadeIn 0.8s ease-out ${delay}s forwards`;
+    });
+      // Animate social links with subtle stagger
+    const socialLinks = document.querySelectorAll('.social-links a');
+    socialLinks.forEach((link, index) => {
+        const delay = 0.9 + (index * 0.1);
+        link.style.opacity = '0';
+        link.style.animation = `fadeInLeft 0.5s ease-out ${delay}s forwards`;
+    });
+    
+    // Animate project cards with a cascade effect
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        const delay = 1.2 + (index * 0.1);
+        card.style.opacity = '0';
+        card.style.animation = `fadeInUp 0.6s ease-out ${delay}s forwards`;
+    });
+});

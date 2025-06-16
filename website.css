@@ -97,7 +97,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.15;
+    opacity: 0.18;
     pointer-events: none;
 }
 
@@ -107,7 +107,7 @@ body {
     }
     
     #matrix-bg {
-        opacity: 0.1; /* Reduced opacity on mobile for better readability */
+        opacity: 0.16; /* Slightly reduced opacity on mobile for better readability */
     }
 }
 
@@ -153,7 +153,6 @@ body {
 
 .social-links a:hover {
     opacity: 0.8;
-    transform: translateY(-2px);
 }
 
 .social-links a::after {

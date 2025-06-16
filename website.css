@@ -254,25 +254,10 @@ body {
     color: var(--text-highlight);
     font-weight: var(--font-weight-medium);
     position: relative;
-    animation: textPulse 8s infinite;
     display: inline-block;
 }
 
-/* Create a subtle pulse animation for highlighted text */
-@keyframes textPulse {
-    0% {
-        color: var(--text-highlight);
-        text-shadow: 0 0 1px var(--text-shadow);
-    }
-    50% {
-        color: #ffffff;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    }
-    100% {
-        color: var(--text-highlight);
-        text-shadow: 0 0 1px var(--text-shadow);
-    }
-}
+/* Animation removed for highlighted text */
 
 /* Typography enhancements */
 h1, h2, h3, h4, h5, h6 {

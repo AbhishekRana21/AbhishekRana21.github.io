@@ -28,7 +28,7 @@ for(let x = 0; x < columns; x++) {
 }
 
 // FPS control for better performance on mobile
-const targetFPS = isMobile ? 25 : 35;
+const targetFPS = isMobile ? 20 : 20;
 const frameDelay = 1000 / targetFPS;
 
 function draw() {
